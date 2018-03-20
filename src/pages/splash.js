@@ -21,7 +21,8 @@ export default class HomeScreen extends React.Component {
                 source={require('../assets/img/background.png')}
                 style={styles.backgroundImg}
             >
-                <Text style={styles.title}>Effettua l'accesso</Text>
+            <Text style={styles.title}>TheTVDB</Text>
+                <Text style={[styles.title, styles.marginBottom100]}>Effettua l'accesso</Text>
                 <TextInput
                     style={styles.textInput}
                     onChangeText={(username) => this.setState({ username })}
@@ -58,14 +59,16 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 18,
+        color: '#fff',
         fontWeight: '900',
-        marginBottom: 30,
+        marginBottom: 15
+    },
+    marginBottom100: {
+        marginBottom: 100,
     },
     textInput: {
         height: 40,
         width: '80%',
-        borderColor: 'gray',
-        borderWidth: 1,
         borderRadius: 3,
         marginBottom: 10,
         marginTop: 10,
