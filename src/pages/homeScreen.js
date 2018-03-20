@@ -50,7 +50,7 @@ export default class HomeScreen extends React.Component {
                     main: { opacity: (2 - ratio) / 2 }
                 })}
                 content={
-                    <View style={{backgroundColor: '#fff', height: '100%'}}>
+                    <View style={styles.leftDrawer}>
                         <Text onPress={() => this.props.navigation.navigate('SplashScreen')}>Logout</Text>
                     </View>
                 }>
@@ -238,4 +238,9 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#fff'
     },
+    leftDrawer: {
+        backgroundColor: '#fff',
+        height: '100%', 
+        padding: 10
+    }
 });
