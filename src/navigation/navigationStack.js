@@ -1,23 +1,26 @@
 import { StackNavigator } from 'react-navigation'
 import HomeScreen from '../pages/homeScreen'
 import DetailsScreen from '../pages/detailsScreen'
+import Splash from '../pages/splash'
 
 const Navigator = StackNavigator(
     {
         DetailsScreen: { screen: DetailsScreen },
         HomeScreen: { screen: HomeScreen },
+        Splash: { screen: Splash }
     },
     {
-        initialRouteName: 'HomeScreen',
+        initialRouteName: 'Splash',
         navigationOptions: {
             headerBackTitle: null,
             headerStyle: {
-                backgroundColor: '#f4511e',
+                backgroundColor: '#b6d415',
             },
-            headerTintColor: '#fff',
+            //headerTintColor: '#fff',
             headerTitleStyle: {
                 fontWeight: 'bold',
             },
+            gesturesEnabled: false
         },
     }
 )

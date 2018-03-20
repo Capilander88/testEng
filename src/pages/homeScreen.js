@@ -1,10 +1,19 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableHighlight } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 export default class HomeScreen extends React.Component {
     static navigationOptions = {
         title: 'Home',
+        headerLeft: (
+            <View>
+                <TouchableHighlight>
+                    <Text style={{fontSize: 30, marginLeft: 10}}>
+                        =
+                    </Text>
+                </TouchableHighlight>
+            </View>
+        ),
     };
     render() {
         return (
