@@ -16,7 +16,7 @@ const Navigator = StackNavigator(
             headerStyle: {
                 backgroundColor: '#b6d415',
             },
-            //headerTintColor: '#fff',
+            headerTintColor: '#000',
             headerTitleStyle: {
                 fontWeight: 'bold',
             },

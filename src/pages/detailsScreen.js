@@ -7,13 +7,13 @@ export default class DetailsScreen extends React.Component {
         title: 'Details',
     };
     render() {
+        const { params } = this.props.navigation.state;
+        const itemId = params ? params.itemId : null;
+        const tvSerie = params ? params.tvSerie : null;
+
         return (
             <View style={styles.container}>
-                <Text>Details Screen</Text>
-                <Button
-                    title="Go to home"
-                    onPress={() => this.props.navigation.goBack()}
-                />
+                <Text>{tvSerie}</Text>
             </View>
         );
     }
